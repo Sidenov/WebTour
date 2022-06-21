@@ -5,13 +5,14 @@ import ru.netology.web.data.DataHelper;
 
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class PaymentByCardPage {
-    private SelenideElement cardNumber = $(withText("Номер карты"));
-    private SelenideElement month = $(withText("Месяц"));
-    private SelenideElement year = $(withText("Год"));
-    private SelenideElement cardOwner = $(withText("Владелец"));
-    private SelenideElement CVV = $(withText("CVC/CVV"));
+    private SelenideElement cardNumber = $("[placeholder=\"0000 0000 0000 0000\"]");
+    private SelenideElement month = $("[placeholder=\"08\"]");
+    private SelenideElement year = $("[placeholder=\"22\"]");
+    private SelenideElement cardOwner = $$("[class='input__control']").get(3);
+    private SelenideElement CVV = $("[placeholder=\"999\"]");
     private SelenideElement continueButton = $(withText("Продолжить"));
 
     public void fillingOutTheForm(DataHelper.CardData cardData) {

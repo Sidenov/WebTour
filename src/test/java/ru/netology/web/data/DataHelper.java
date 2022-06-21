@@ -90,11 +90,15 @@ public class DataHelper {
         return " ";
     }
 
-    public static CardData getApprovedCardData() {
+    public static CardData getApprovedCardOfCardData() {
         return new CardData(getApprovedCard(), getValidMonth(), getValidYear(), getValidCardOwner(), getValidCVV());
     }
 
-    public static CardData getDeclinedCardData() {
+    public static CardData getDeclinedCardOfCardData() {
         return new CardData(getDeclinedCard(), getValidMonth(), getValidYear(), getValidCardOwner(), getValidCVV());
+    }
+
+    public static CardData getInvalidCardOfCardData() {
+        return new CardData(getInvalidCard(), getValidMonth(), getValidYear(), getValidCardOwner(), getValidCVV());
     }
 }
