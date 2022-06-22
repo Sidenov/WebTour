@@ -5,14 +5,14 @@
 ### Процедура запуска авто-тестов:
 1. Клонировать проект
 2. Запустить контейнеры командой:
-> **docker-compose up -d**
+    > **docker-compose up -d**
 3. Убедиться что контейнеры запущены конмадной:
-> **docker ps**
+    > **docker ps**
 4. Запустить приложение командой:
-> **java -jar artifacts/aqa-shop.jar**
+    > **java -jar artifacts/aqa-shop.jar**
 5. Запустить авто-тесты командой:
-> **./gradlew clean test**
+    > **./gradlew clean test**
 6. Для создания отчета Allure запустить команду:
-> **./gradlew allureServe**
+    > **./gradlew allureServe**
 
 
