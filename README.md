@@ -1,3 +1,9 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/o4vgi93mw7wgumjl?svg=true)](https://ci.appveyor.com/project/Sidenov/webtour)
+
++ [**Планирование автоматизации**](Plan.md)
++ [**Отчёт о проведенном тестировании**](Report.md)
++ [**Отчёт по итогам автоматизации**](Summary.md)
+___
 ### Необходимое окружение:
 - IntelliJ IDEA
 - Docker или Docker Toolbox
