@@ -56,8 +56,12 @@ public class DataHelper {
         return LocalDate.now().plusYears(1).format(DateTimeFormatter.ofPattern("yy"));
     }
 
-    public static String getInvalidYear() {
+    public static String getInvalidYearLessThenNow() {
         return LocalDate.now().minusYears(1).format(DateTimeFormatter.ofPattern("yy"));
+    }
+
+    public static String getInvalidYearMoreThenFive() {
+        return LocalDate.now().plusYears(6).format(DateTimeFormatter.ofPattern("yy"));
     }
 
     public static String getInvalidYearEmpty() {
@@ -82,8 +86,12 @@ public class DataHelper {
         return "111";
     }
 
-    public static String getInvalidCVVLessThenThreeNumber() {
+    public static String getInvalidCVVHaveNumber() {
         return "1";
+    }
+
+    public static String getInvalidCVVHaveTwoNumber() {
+        return "11";
     }
 
     public static String getInvalidCVVEmpty() {
