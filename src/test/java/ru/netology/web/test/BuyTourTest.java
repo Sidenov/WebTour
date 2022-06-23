@@ -30,7 +30,7 @@ public class BuyTourTest {
     @BeforeEach
     void setUp() {
         open("http://localhost:8080");
-        Configuration.holdBrowserOpen = true;
+//        Configuration.holdBrowserOpen = true;
     }
 
     @Test
