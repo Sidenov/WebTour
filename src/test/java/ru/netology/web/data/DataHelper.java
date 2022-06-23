@@ -36,38 +36,6 @@ public class DataHelper {
         return " ";
     }
 
-    public static String getValidMonth() {
-        return "01";
-    }
-
-    public static String getInvalidMonthLessThenOne() {
-        return "00";
-    }
-
-    public static String getInvalidMonthMoreThenTwelve() {
-        return "13";
-    }
-
-    public static String getInvalidMonthEmpty() {
-        return " ";
-    }
-
-    public static String getValidYear() {
-        return LocalDate.now().plusYears(1).format(DateTimeFormatter.ofPattern("yy"));
-    }
-
-    public static String getInvalidYearLessThenNow() {
-        return LocalDate.now().minusYears(1).format(DateTimeFormatter.ofPattern("yy"));
-    }
-
-    public static String getInvalidYearMoreThenFive() {
-        return LocalDate.now().plusYears(6).format(DateTimeFormatter.ofPattern("yy"));
-    }
-
-    public static String getInvalidYearEmpty() {
-        return " ";
-    }
-
     public static String getValidCardOwner() {
         Faker faker = new Faker(new Locale("en"));
         return faker.name().fullName();
@@ -98,15 +66,4 @@ public class DataHelper {
         return " ";
     }
 
-    public static CardData getApprovedCardOfCardData() {
-        return new CardData(getApprovedCard(), getValidMonth(), getValidYear(), getValidCardOwner(), getValidCVV());
-    }
-
-    public static CardData getDeclinedCardOfCardData() {
-        return new CardData(getDeclinedCard(), getValidMonth(), getValidYear(), getValidCardOwner(), getValidCVV());
-    }
-
-    public static CardData getInvalidCardOfCardData() {
-        return new CardData(getInvalidCard(), getValidMonth(), getValidYear(), getValidCardOwner(), getValidCVV());
-    }
 }

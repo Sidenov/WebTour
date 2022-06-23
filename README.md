@@ -1,5 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/o4vgi93mw7wgumjl?svg=true)](https://ci.appveyor.com/project/Sidenov/webtour)
 
++ [**Задание Дипломной работы**](docs/DiplomaTask.md)
 + [**Планирование автоматизации**](docs/Plan.md)
 + [**Отчёт о проведенном тестировании**](docs/Report.md)
 + [**Отчёт по итогам автоматизации**](docs/Summary.md)

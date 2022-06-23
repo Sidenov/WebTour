@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class PaymentByCardPage {
+public class CreditPaymentPage {
     private SelenideElement fieldCardNumber = $("[placeholder=\"0000 0000 0000 0000\"]");
     private SelenideElement fieldMonth = $("[placeholder=\"08\"]");
     private SelenideElement fieldYear = $("[placeholder=\"22\"]");
@@ -26,24 +26,14 @@ public class PaymentByCardPage {
     private SelenideElement cardPeriod = $(withText("Неверно указан срок действия карты"));
     private SelenideElement cardExpired = $(withText("Истёк срок действия карты"));
 
-
-    public void fillingOutTheForm(DataHelper.CardData cardData) {
-        fieldCardNumber.setValue(cardData.getCardNumber());
-        fieldMonth.setValue(cardData.getMonth());
-        fieldYear.setValue(cardData.getYear());
-        fieldCardOwner.setValue(cardData.getCardOwner());
-        fieldCVV.setValue(cardData.getCVV());
-        continueButton.click();
-    }
-
     public void successOperationApproved() {
-        success.should(Condition.visible, Duration.ofSeconds(10));
-        operationApproved.should(Condition.visible, Duration.ofSeconds(10));
+        success.should(Condition.visible, Duration.ofSeconds(15));
+        operationApproved.should(Condition.visible, Duration.ofSeconds(15));
     }
 
     public void errorBankRefused() {
-        error.should(Condition.visible, Duration.ofSeconds(10));
-        bankRefused.should(Condition.visible, Duration.ofSeconds(10));
+        error.should(Condition.visible, Duration.ofSeconds(15));
+        bankRefused.should(Condition.visible, Duration.ofSeconds(15));
     }
 
     public void errorWrongFormat() {
@@ -61,7 +51,7 @@ public class PaymentByCardPage {
         cardExpired.should(Condition.visible);
     }
 
-    public void fillingOutTheForm1(String cardNumber, String month, String year, String cardOwner, String CVV) {
+    public void fillingOutTheFormForCreditPaymentTest(String cardNumber, String month, String year, String cardOwner, String CVV) {
         fieldCardNumber.setValue(cardNumber);
         fieldMonth.setValue(month);
         fieldYear.setValue(year);
@@ -69,4 +59,5 @@ public class PaymentByCardPage {
         fieldCVV.setValue(CVV);
         continueButton.click();
      }
+
 }
