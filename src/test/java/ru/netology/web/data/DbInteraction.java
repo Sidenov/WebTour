@@ -1,27 +1,43 @@
 package ru.netology.web.data;
 
-import org.junit.jupiter.api.Test;
+import lombok.SneakyThrows;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DbInteraction {
-    private Connection getNewConnection() throws SQLException {
-        String url = "jdbc:postgresql://192.168.99.100:5432/app";
-        String user = "app";
-        String passwd = "pass";
-        return DriverManager.getConnection(url, user, passwd);
+
+    private static String url = System.getProperty("db.url");
+    private static String user = "app";
+    private static String password = "pass";
+
+    @BeforeEach
+    @SneakyThrows
+    private static Connection getConnection() {
+         return DriverManager.getConnection(url, user, password);
     }
 
-    @Test
-    public void shouldGetJdbcConnection() throws SQLException {
-        try(Connection connection = getNewConnection()) {
-            assertTrue(connection.isValid(1));
-            assertFalse(connection.isClosed());
+    @SneakyThrows
+    public static String getStatusBuyCard() {
+        var runner = new QueryRunner();
+        var cardsSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1;";
+
+        try (var conn = getConnection()) {
+            String first = runner.query(conn, cardsSQL, new ScalarHandler<>());
+            return first;
+        }
+    }
+    @SneakyThrows
+    public static String getStatusBuyCredit() {
+        var runner = new QueryRunner();
+        var cardsSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1;";
+
+        try (var conn = getConnection()) {
+            return runner.query(conn, cardsSQL, new ScalarHandler<>());
         }
     }
 

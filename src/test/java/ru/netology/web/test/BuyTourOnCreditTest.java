@@ -4,6 +4,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import ru.netology.web.data.DataHelper;
+import ru.netology.web.data.DbInteraction;
 import ru.netology.web.page.MainPage;
 
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.netology.web.data.DataHelper.*;
 
 public class BuyTourOnCreditTest {
@@ -42,6 +44,9 @@ public class BuyTourOnCreditTest {
         var fill = mainPage.paymentByCreditCard();
         fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.successOperationApproved();
+        var expected = "APPROVED";
+        var actual = DbInteraction.getStatusBuyCredit();
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -51,6 +56,9 @@ public class BuyTourOnCreditTest {
         var fill = mainPage.paymentByCreditCard();
         fill.fillingOutTheFormForCreditPaymentTest(getDeclinedCard(), generateDate(1, "MM"), generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.errorBankRefused();
+        var expected = "DECLINED";
+        var actual = DbInteraction.getStatusBuyCredit());
+        assertEquals(expected, actual);
     }
 
     @Test

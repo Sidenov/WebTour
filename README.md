@@ -16,14 +16,26 @@ ___
 3. Убедиться что контейнеры запущены командой:
    > **docker ps**
 4. Запустить приложение командой:
-   > **java -jar artifacts/aqa-shop.jar**
-5. Запустить эмулятор банковских карт на порту 9999 с каталога gate-simulator:
-   > **cd gate-simulator**
+   > Для Mysql:
+   > 
+   > **java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar**
+   > 
+   > Для Postgresql:
+   > 
+   > **java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar**
 
-   > **npm start**
-6. Запустить авто-тесты командой:
-   > **./gradlew clean test**
-7. Для создания отчета Allure запустить команду:
+   (Если запущен Docker ToolBox, то вместо localhost следует писать IP Toolbox)
+
+
+5. Запустить авто-тесты командой:
+   > Для Mysql:
+   > 
+   > **./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"**
+   > 
+   >  Для Postgresql:
+   > 
+   > **./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"**
+6. Для создания отчета Allure запустить команду:
    > **./gradlew allureServe**
 
 
