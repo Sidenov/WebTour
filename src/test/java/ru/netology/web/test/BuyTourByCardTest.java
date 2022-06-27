@@ -32,7 +32,7 @@ public class BuyTourByCardTest {
     @BeforeEach
     void setUp() {
         open("http://localhost:8080");
-        Configuration.holdBrowserOpen = true;
+//        Configuration.holdBrowserOpen = true;
     }
 
     @Test
@@ -76,8 +76,7 @@ public class BuyTourByCardTest {
     void shouldFieldMonthLessThenOne() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
-        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), "0" +
-                "", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), "00", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.errorCardPeriod();
     }
 
@@ -95,7 +94,7 @@ public class BuyTourByCardTest {
     void shouldFieldMonthIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
-        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), "0", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), " ", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.errorWrongFormat();
     }
 
@@ -122,12 +121,12 @@ public class BuyTourByCardTest {
     void shouldFieldYearIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
-        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), "0", getValidCardOwner(), getValidCVV());
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), " ", getValidCardOwner(), getValidCVV());
         fill.errorWrongFormat();
     }
 
     @Test
-    @DisplayName("Ввод кирилицы в поле Владелец")
+    @DisplayName("Ввод кириллицы в поле Владелец")
     void shouldFieldOwnerRussianLetters() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();

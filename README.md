@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/o4vgi93mw7wgumjl?svg=true)](https://ci.appveyor.com/project/Sidenov/webtour)
+./gradlew clean test[![Build status](https://ci.appveyor.com/api/projects/status/o4vgi93mw7wgumjl?svg=true)](https://ci.appveyor.com/project/Sidenov/webtour)
 
 + [**Задание Дипломной работы**](docs/DiplomaTask.md)
 + [**Планирование автоматизации**](docs/Plan.md)
@@ -17,8 +17,9 @@ ___
    > **docker ps**
 4. Запустить приложение командой:
    > **java -jar artifacts/aqa-shop.jar**
-5. Запустить эмулятор банковских карт с каталога gate-simulator:
+5. Запустить эмулятор банковских карт на порту 9999 с каталога gate-simulator:
    > **cd gate-simulator**
+
    > **npm start**
 6. Запустить авто-тесты командой:
    > **./gradlew clean test**

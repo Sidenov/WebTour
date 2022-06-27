@@ -76,7 +76,7 @@ public class BuyTourOnCreditTest {
     void shouldFieldMonthLessThenOne() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCreditCard();
-        fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), "0", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
+        fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), "00", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.errorCardPeriod();
     }
 
@@ -94,7 +94,7 @@ public class BuyTourOnCreditTest {
     void shouldFieldMonthIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCreditCard();
-        fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), "0", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
+        fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), " ", generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.errorWrongFormat();
     }
 
@@ -121,7 +121,7 @@ public class BuyTourOnCreditTest {
     void shouldFieldYearIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCreditCard();
-        fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), generateDate(1, "MM"), "0", getValidCardOwner(), getValidCVV());
+        fill.fillingOutTheFormForCreditPaymentTest(getApprovedCard(), generateDate(1, "MM"), " ", getValidCardOwner(), getValidCVV());
         fill.errorWrongFormat();
     }
 
