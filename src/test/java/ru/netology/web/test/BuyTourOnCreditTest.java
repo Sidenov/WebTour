@@ -57,7 +57,7 @@ public class BuyTourOnCreditTest {
         fill.fillingOutTheFormForCreditPaymentTest(getDeclinedCard(), generateDate(1, "MM"), generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
         fill.errorBankRefused();
         var expected = "DECLINED";
-        var actual = DbInteraction.getStatusBuyCredit());
+        var actual = DbInteraction.getStatusBuyCredit();
         assertEquals(expected, actual);
     }
 
