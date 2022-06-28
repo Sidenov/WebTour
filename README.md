@@ -1,4 +1,4 @@
-./gradlew clean test[![Build status](https://ci.appveyor.com/api/projects/status/o4vgi93mw7wgumjl?svg=true)](https://ci.appveyor.com/project/Sidenov/webtour)
+[![Build status](https://ci.appveyor.com/api/projects/status/o4vgi93mw7wgumjl?svg=true)](https://ci.appveyor.com/project/Sidenov/webtour)
 
 + [**Задание Дипломной работы**](docs/DiplomaTask.md)
 + [**Планирование автоматизации**](docs/Plan.md)
