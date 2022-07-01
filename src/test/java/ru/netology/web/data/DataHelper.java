@@ -6,6 +6,7 @@ import lombok.Value;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
+import java.util.Random;
 
 public class DataHelper {
     private DataHelper() {
@@ -32,6 +33,10 @@ public class DataHelper {
         return "1111 1111 1111 1111";
     }
 
+    public static String getInvalidCardIfFirstNumberZero() {
+        return "0444 4444 4444 4441";
+    }
+
     public static String getEmptyCard() {
         return " ";
     }
@@ -51,19 +56,33 @@ public class DataHelper {
     }
 
     public static String getValidCVV() {
-        return "111";
+//        int code = (int) (Math.random() * 900) + 100;
+//        return Integer.toString(code);
+        var random = new Random();
+//        return Integer.toString(random.nextInt(899) + 100);
+        String a = Integer.toString(random.nextInt(10));
+        String b = Integer.toString(random.nextInt(10));
+        String c = Integer.toString(random.nextInt(10));
+        return a+b+c;
     }
 
-    public static String getInvalidCVVHaveNumber() {
-        return "1";
+    public static String getInvalidCVVHaveOneNumber() {
+        var random = new Random();
+        return Integer.toString(random.nextInt(10));
     }
 
     public static String getInvalidCVVHaveTwoNumber() {
-        return "11";
+        var random = new Random();
+        return Integer.toString(random.nextInt(90) + 10);
     }
+
 
     public static String getInvalidCVVEmpty() {
         return " ";
+    }
+
+    public static String generateDate(int months, String formatPattern) {
+        return LocalDate.now().plusMonths(months).format(DateTimeFormatter.ofPattern(formatPattern));
     }
 
 }

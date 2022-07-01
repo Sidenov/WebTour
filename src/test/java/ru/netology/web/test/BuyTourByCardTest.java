@@ -17,9 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.netology.web.data.DataHelper.*;
 
 public class BuyTourByCardTest {
-    private String generateDate(int months, String formatPattern) {
-        return LocalDate.now().plusMonths(months).format(DateTimeFormatter.ofPattern(formatPattern));
-    }
+
 
     @BeforeAll
     static void setUpAll() {
@@ -38,7 +36,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Успешная оплата при вводе валидных значений по одобренной (Approved) карте")
+    @DisplayName("1. Успешная оплата при вводе валидных значений по одобренной (Approved) карте")
     void shouldSuccessfulPaymentByApprovedCard() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -50,7 +48,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ошибка оплаты при вводе валидных значений по отклоненной (Declined) карте")
+    @DisplayName("2. Ошибка оплаты при вводе валидных значений по отклоненной (Declined) карте")
     void shouldUnsuccessfulPaymentByDeclinedCard() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -62,7 +60,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ошибка оплаты при вводе невалидного номера карты")
+    @DisplayName("3. Ошибка оплаты при вводе невалидного номера карты")
     void shouldUnsuccessfulPaymentByInvalidCard() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -71,7 +69,16 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Оставить пустое поле Номер карты")
+    @DisplayName("4. Номер карты начинается с 0")
+    void shouldFieldNumberOfCardIfFirstNumberZero() {
+        var mainPage = new MainPage();
+        var fill = mainPage.paymentByCard();
+        fill.fillingOutTheFormForCardPaymentTest(getInvalidCardIfFirstNumberZero(), generateDate(1, "MM"), generateDate(1, "yy"), getValidCardOwner(), getValidCVV());
+        fill.errorWrongFormat();
+    }
+
+    @Test
+    @DisplayName("5. Оставить пустое поле Номер карты")
     void shouldFieldNumberOfCardIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -80,7 +87,16 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод в поле Месяц граничное значение 0")
+    @DisplayName("6. Ввод в поле Месяц значение прошедшего месяца текущего года")
+    void shouldFieldMonthIfCardHasExpired() {
+        var mainPage = new MainPage();
+        var fill = mainPage.paymentByCard();
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(-1, "MM"), generateDate(0, "yy"), getValidCardOwner(), getValidCVV());
+        fill.errorCardPeriod();
+    }
+
+    @Test
+    @DisplayName("7. Ввод в поле Месяц граничное значение 00")
     void shouldFieldMonthLessThenOne() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -89,7 +105,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод в поле Месяц граничное значение 13")
+    @DisplayName("8. Ввод в поле Месяц граничное значение 13")
     void shouldFieldMonthMoreThenTwelve() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -98,7 +114,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Оставить пустым поле Месяц")
+    @DisplayName("9. Оставить пустым поле Месяц")
     void shouldFieldMonthIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -107,7 +123,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод карты с истекшим сроком действия")
+    @DisplayName("10. Ввод карты с истекшим сроком действия")
     void shouldFieldYearLessThenOne() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -116,7 +132,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод карты со сроком действия больше 5 лет")
+    @DisplayName("11. Ввод карты со сроком действия больше 5 лет")
     void shouldFieldYearMoreThenTwelve() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -125,7 +141,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Оставить пустым поле Год")
+    @DisplayName("12. Оставить пустым поле Год")
     void shouldFieldYearIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -134,8 +150,8 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод кириллицы в поле Владелец")
-    void shouldFieldOwnerRussianLetters() {
+    @DisplayName("13. Ввод кириллицы в поле Владелец")
+    void shouldFieldOwnerSymbols() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
         fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), getInvalidCardOwner(), getValidCVV());
@@ -143,16 +159,25 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод цифр и символов в поле Владелец")
-    void shouldFieldOwnerNumbersAndSymbols() {
+    @DisplayName("14. Ввод цифр в поле Владелец")
+    void shouldFieldOwnerNumber() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
-        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), "111<>!№%:?*", getValidCVV());
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), "111", getValidCVV());
         fill.errorWrongFormat();
     }
 
     @Test
-    @DisplayName("Оставить пустым поле Владелец")
+    @DisplayName("15. Ввод символов в поле Владелец")
+    void shouldFieldOwnerNumbersAndSymbols() {
+        var mainPage = new MainPage();
+        var fill = mainPage.paymentByCard();
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), "<>!№%:?*", getValidCVV());
+        fill.errorWrongFormat();
+    }
+
+    @Test
+    @DisplayName("16, Оставить пустым поле Владелец")
     void shouldFieldOwnerIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -161,16 +186,16 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Ввод в поле CVC/CVV одну цифру")
+    @DisplayName("17, Ввод в поле CVC/CVV одну цифру")
     void shouldFieldCVVHaveOneNumber() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
-        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), getValidCardOwner(), getInvalidCVVHaveNumber());
+        fill.fillingOutTheFormForCardPaymentTest(getApprovedCard(), generateDate(1, "MM"), generateDate(1, "yy"), getValidCardOwner(), getInvalidCVVHaveOneNumber());
         fill.errorWrongFormat();
     }
 
     @Test
-    @DisplayName("Ввод в поле CVC/CVV две цифры")
+    @DisplayName("18. Ввод в поле CVC/CVV две цифры")
     void shouldFieldCVVHaveTwoNumber() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
@@ -179,7 +204,7 @@ public class BuyTourByCardTest {
     }
 
     @Test
-    @DisplayName("Оставить пустым поле CVC/CVV")
+    @DisplayName("19. Оставить пустым поле CVC/CVV")
     void shouldFieldCVVIsEmpty() {
         var mainPage = new MainPage();
         var fill = mainPage.paymentByCard();
