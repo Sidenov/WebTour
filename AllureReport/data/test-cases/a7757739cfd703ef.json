@@ -1,0 +1,285 @@
+{
+  "uid" : "a7757739cfd703ef",
+  "name" : "8. Ввод в поле Месяц граничное значение 13",
+  "fullName" : "ru.netology.web.test.BuyTourOnCreditTest.shouldFieldMonthMoreThenTwelve",
+  "historyId" : "d69e2c5bc81c4f8fbb1d3baa66ed51f9",
+  "time" : {
+    "start" : 1656644286332,
+    "stop" : 1656644287103,
+    "duration" : 771
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUpAll",
+    "time" : {
+      "start" : 1656644246461,
+      "stop" : 1656644246461,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1656644286332,
+      "stop" : 1656644286371,
+      "duration" : 39
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") http://localhost:8080",
+      "time" : {
+        "start" : 1656644286332,
+        "stop" : 1656644286370,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"with text: Путешествие дня\") should(visible)",
+      "time" : {
+        "start" : 1656644286371,
+        "stop" : 1656644286393,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"with text: Купить в кредит\") click()",
+      "time" : {
+        "start" : 1656644286393,
+        "stop" : 1656644286460,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"with text: Кредит по данным карты\") should(visible)",
+      "time" : {
+        "start" : 1656644286460,
+        "stop" : 1656644286484,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"[placeholder=\"0000 0000 0000 0000\"]\") set value(4444 4444 4444 4441)",
+      "time" : {
+        "start" : 1656644286494,
+        "stop" : 1656644286633,
+        "duration" : 139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"[placeholder=\"08\"]\") set value(13)",
+      "time" : {
+        "start" : 1656644286633,
+        "stop" : 1656644286718,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"[placeholder=\"22\"]\") set value(22)",
+      "time" : {
+        "start" : 1656644286718,
+        "stop" : 1656644286802,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"[class='input__control'][3]\") set value(Frances Dietrich MD)",
+      "time" : {
+        "start" : 1656644286802,
+        "stop" : 1656644286930,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"[placeholder=\"999\"]\") set value(998)",
+      "time" : {
+        "start" : 1656644286930,
+        "stop" : 1656644287020,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"with text: Продолжить\") click()",
+      "time" : {
+        "start" : 1656644287020,
+        "stop" : 1656644287078,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "$(\"with text: Неверно указан срок действия карты\") should(visible)",
+      "time" : {
+        "start" : 1656644287078,
+        "stop" : 1656644287102,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownAll",
+    "time" : {
+      "start" : 1656644302470,
+      "stop" : 1656644302470,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:ru.netology.web.test.BuyTourOnCreditTest]/[method:shouldFieldMonthMoreThenTwelve()]"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7CIKHCE"
+  }, {
+    "name" : "thread",
+    "value" : "3420@DESKTOP-7CIKHCE.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.web.test.BuyTourOnCreditTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.web.test.BuyTourOnCreditTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldFieldMonthMoreThenTwelve"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.web.test.BuyTourOnCreditTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a7757739cfd703ef.json",
+  "parameterValues" : [ ]
+}

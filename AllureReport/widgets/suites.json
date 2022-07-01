@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "88c1a3bb3336e5d5e796b1447a6e91c9",
+    "name" : "ru.netology.web.test.BuyTourByCardTest",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 19
+    }
+  }, {
+    "uid" : "24ffb4465b9811e1b3932986f40bf960",
+    "name" : "ru.netology.web.test.BuyTourOnCreditTest",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 19
+    }
+  } ]
+}

@@ -1,0 +1,381 @@
+[ {
+  "uid" : "2888a5513664862e",
+  "name" : "1. Успешная оплата при вводе валидных значений по одобренной (Approved) карте",
+  "time" : {
+    "start" : 1656644287846,
+    "stop" : 1656644295066,
+    "duration" : 7220
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1e94b4caeb90231",
+  "name" : "16. Оставить пустым поле Владелец",
+  "time" : {
+    "start" : 1656644246462,
+    "stop" : 1656644247106,
+    "duration" : 644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20322e648de8a94b",
+  "name" : "6. Ввод в поле Месяц значение прошедшего месяца текущего года",
+  "time" : {
+    "start" : 1656644287108,
+    "stop" : 1656644287843,
+    "duration" : 735
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e8d3b2a4b61f4ab",
+  "name" : "13. Ввод кирилицы в поле Владелец",
+  "time" : {
+    "start" : 1656644275998,
+    "stop" : 1656644281096,
+    "duration" : 5098
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5aa41437bf2a8126",
+  "name" : "2. Ошибка оплаты при вводе валидных значений по отклоненной (Declined) карте",
+  "time" : {
+    "start" : 1656644199538,
+    "stop" : 1656644215656,
+    "duration" : 16118
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "74be4823be3e1e91",
+  "name" : "4. Номер карты начинается с 0",
+  "time" : {
+    "start" : 1656644281101,
+    "stop" : 1656644286328,
+    "duration" : 5227
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1018604e02f93e7c",
+  "name" : "1. Успешная оплата при вводе валидных значений по одобренной (Approved) карте",
+  "time" : {
+    "start" : 1656644230248,
+    "stop" : 1656644233483,
+    "duration" : 3235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "545c5a70b3153743",
+  "name" : "9. Оставить пустым поле Месяц",
+  "time" : {
+    "start" : 1656644301685,
+    "stop" : 1656644302468,
+    "duration" : 783
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ff4993577f545e6",
+  "name" : "12. Оставить пустым поле Год",
+  "time" : {
+    "start" : 1656644233487,
+    "stop" : 1656644234150,
+    "duration" : 663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6725f81494e453bd",
+  "name" : "7. Ввод в поле Месяц граничное значение 00",
+  "time" : {
+    "start" : 1656644217757,
+    "stop" : 1656644218433,
+    "duration" : 676
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d15bf7d99b5a4974",
+  "name" : "17. Ввод в поле CVC/CVV одну цифру",
+  "time" : {
+    "start" : 1656644274002,
+    "stop" : 1656644274642,
+    "duration" : 640
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74c4263a5d225105",
+  "name" : "13. Ввод кириллицы в поле Владелец",
+  "time" : {
+    "start" : 1656644193764,
+    "stop" : 1656644199490,
+    "duration" : 5726
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8792747f4bf7f2e",
+  "name" : "15. Ввод символов в поле Владелец",
+  "time" : {
+    "start" : 1656644239770,
+    "stop" : 1656644244877,
+    "duration" : 5107
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7757739cfd703ef",
+  "name" : "8. Ввод в поле Месяц граничное значение 13",
+  "time" : {
+    "start" : 1656644286332,
+    "stop" : 1656644287103,
+    "duration" : 771
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "650c4ecefece8b9",
+  "name" : "9. Оставить пустым поле Месяц",
+  "time" : {
+    "start" : 1656644245682,
+    "stop" : 1656644246444,
+    "duration" : 762
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9d654e681534c70",
+  "name" : "11. Ввод карты со сроком действия больше 5 лет",
+  "time" : {
+    "start" : 1656644273324,
+    "stop" : 1656644273991,
+    "duration" : 667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb8c6c11465bb64f",
+  "name" : "18. Ввод в поле CVC/CVV две цифры",
+  "time" : {
+    "start" : 1656644300920,
+    "stop" : 1656644301681,
+    "duration" : 761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4bd56164bd90b6f",
+  "name" : "19. Оставить пустым поле CVC/CVV",
+  "time" : {
+    "start" : 1656644234171,
+    "stop" : 1656644234835,
+    "duration" : 664
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6127723f5fdbd359",
+  "name" : "18. Ввод в поле CVC/CVV две цифры",
+  "time" : {
+    "start" : 1656644244883,
+    "stop" : 1656644245679,
+    "duration" : 796
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4265b0b992f30849",
+  "name" : "16, Оставить пустым поле Владелец",
+  "time" : {
+    "start" : 1656644175078,
+    "stop" : 1656644193640,
+    "duration" : 18562
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a03eb72227c78051",
+  "name" : "3. Ошибка оплаты при вводе невалидного номера карты",
+  "time" : {
+    "start" : 1656644297231,
+    "stop" : 1656644300917,
+    "duration" : 3686
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c904b1df4bf1222",
+  "name" : "17, Ввод в поле CVC/CVV одну цифру",
+  "time" : {
+    "start" : 1656644216421,
+    "stop" : 1656644217086,
+    "duration" : 665
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8924e6dbade9804",
+  "name" : "14. Ввод цифр в поле Владелец",
+  "time" : {
+    "start" : 1656644247109,
+    "stop" : 1656644252212,
+    "duration" : 5103
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a78938d21254b67",
+  "name" : "15. Ввод символов в поле Владелец",
+  "time" : {
+    "start" : 1656644252217,
+    "stop" : 1656644257242,
+    "duration" : 5025
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "617b18db0b0ca073",
+  "name" : "8. Ввод в поле Месяц граничное значение 13",
+  "time" : {
+    "start" : 1656644228712,
+    "stop" : 1656644229479,
+    "duration" : 767
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b5460a17299214",
+  "name" : "7. Ввод в поле Месяц граничное значение 0",
+  "time" : {
+    "start" : 1656644275314,
+    "stop" : 1656644275971,
+    "duration" : 657
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dbf22b8ce3739c71",
+  "name" : "14. Ввод цифр в поле Владелец",
+  "time" : {
+    "start" : 1656644218438,
+    "stop" : 1656644223490,
+    "duration" : 5052
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "781d5855e27678f8",
+  "name" : "6. Ввод в поле Месяц значение прошедшего месяца текущего года",
+  "time" : {
+    "start" : 1656644229483,
+    "stop" : 1656644230244,
+    "duration" : 761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a783ec1d6dd4acd5",
+  "name" : "4. Номер карты начинается с 0",
+  "time" : {
+    "start" : 1656644223497,
+    "stop" : 1656644228707,
+    "duration" : 5210
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad9f70711819b5c6",
+  "name" : "11. Ввод карты со сроком действия больше 5 лет",
+  "time" : {
+    "start" : 1656644215664,
+    "stop" : 1656644216416,
+    "duration" : 752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "698ed003206b489c",
+  "name" : "5. Оставить пустое поле Номер карты",
+  "time" : {
+    "start" : 1656644296558,
+    "stop" : 1656644297229,
+    "duration" : 671
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "508c7d00a5c551b8",
+  "name" : "3. Ошибка оплаты при вводе невалидного номера карты",
+  "time" : {
+    "start" : 1656644235472,
+    "stop" : 1656644239757,
+    "duration" : 4285
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b8bdef275ac6a5",
+  "name" : "2. Ошибка оплаты при вводе валидных значений по отклоненной (Declined) карте",
+  "time" : {
+    "start" : 1656644257247,
+    "stop" : 1656644273313,
+    "duration" : 16066
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f9c8d1ca5ed3f7c",
+  "name" : "10. Ввод карты с истекшим сроком действия",
+  "time" : {
+    "start" : 1656644274645,
+    "stop" : 1656644275311,
+    "duration" : 666
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d90e99edabcc7bfb",
+  "name" : "5. Оставить пустое поле Номер карты",
+  "time" : {
+    "start" : 1656644234841,
+    "stop" : 1656644235466,
+    "duration" : 625
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26ae5542626e85d3",
+  "name" : "10. Ввод карты с истекшим сроком действия",
+  "time" : {
+    "start" : 1656644217090,
+    "stop" : 1656644217754,
+    "duration" : 664
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "663ece7a9c2e5628",
+  "name" : "19. Оставить пустым поле CVC/CVV",
+  "time" : {
+    "start" : 1656644295801,
+    "stop" : 1656644296553,
+    "duration" : 752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7991cff55b815e9",
+  "name" : "12. Оставить пустым поле Год",
+  "time" : {
+    "start" : 1656644295070,
+    "stop" : 1656644295798,
+    "duration" : 728
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

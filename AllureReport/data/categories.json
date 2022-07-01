@@ -1,0 +1,219 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644198904.0.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644198904.0.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "13. Ввод кириллицы в поле Владелец",
+        "uid" : "74c4263a5d225105",
+        "parentUid" : "9bd560832e3b5a54852dfd4670ae23de",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644193764,
+          "stop" : 1656644199490,
+          "duration" : 5726
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9bd560832e3b5a54852dfd4670ae23de"
+    }, {
+      "name" : "Element should visible {with text: Ошибка}\r\nElement: '<div class=\"notification__title\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644215412.1.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644215412.1.html\r\nTimeout: 15 s.",
+      "children" : [ {
+        "name" : "2. Ошибка оплаты при вводе валидных значений по отклоненной (Declined) карте",
+        "uid" : "5aa41437bf2a8126",
+        "parentUid" : "6c33de54d88068a54da84be3087065a9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644199538,
+          "stop" : 1656644215656,
+          "duration" : 16118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c33de54d88068a54da84be3087065a9"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644223223.2.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644223223.2.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "14. Ввод цифр в поле Владелец",
+        "uid" : "dbf22b8ce3739c71",
+        "parentUid" : "23e2b3306357efb177bc2b5fe55ea5ce",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644218438,
+          "stop" : 1656644223490,
+          "duration" : 5052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23e2b3306357efb177bc2b5fe55ea5ce"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644228434.3.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644228434.3.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "4. Номер карты начинается с 0",
+        "uid" : "a783ec1d6dd4acd5",
+        "parentUid" : "e952649f8be91130a5d6d305f59a0b92",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644223497,
+          "stop" : 1656644228707,
+          "duration" : 5210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e952649f8be91130a5d6d305f59a0b92"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644244632.4.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644244632.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "15. Ввод символов в поле Владелец",
+        "uid" : "d8792747f4bf7f2e",
+        "parentUid" : "72826bb2e685d42ef19d8c1fa1f6e734",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644239770,
+          "stop" : 1656644244877,
+          "duration" : 5107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "72826bb2e685d42ef19d8c1fa1f6e734"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644251879.5.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644251879.5.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "14. Ввод цифр в поле Владелец",
+        "uid" : "c8924e6dbade9804",
+        "parentUid" : "43adb8ed0de78b32f5efffc98289b057",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644247109,
+          "stop" : 1656644252212,
+          "duration" : 5103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43adb8ed0de78b32f5efffc98289b057"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644256999.6.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644256999.6.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "15. Ввод символов в поле Владелец",
+        "uid" : "9a78938d21254b67",
+        "parentUid" : "5c06f6b3a48e0c9595973e2789c10ead",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644252217,
+          "stop" : 1656644257242,
+          "duration" : 5025
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c06f6b3a48e0c9595973e2789c10ead"
+    }, {
+      "name" : "Element should visible {with text: Ошибка}\r\nElement: '<div class=\"notification__title\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644273028.7.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644273028.7.html\r\nTimeout: 15 s.",
+      "children" : [ {
+        "name" : "2. Ошибка оплаты при вводе валидных значений по отклоненной (Declined) карте",
+        "uid" : "3b8bdef275ac6a5",
+        "parentUid" : "885676c7dfebcf37d54e394ba8f815de",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644257247,
+          "stop" : 1656644273313,
+          "duration" : 16066
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "885676c7dfebcf37d54e394ba8f815de"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644280800.8.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644280800.8.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "13. Ввод кирилицы в поле Владелец",
+        "uid" : "2e8d3b2a4b61f4ab",
+        "parentUid" : "305c34f6d7e55c249efa0c821d580b3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644275998,
+          "stop" : 1656644281096,
+          "duration" : 5098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "305c34f6d7e55c249efa0c821d580b3d"
+    }, {
+      "name" : "Element not found {with text: Неверный формат}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644286023.9.png\r\nPage source: file:/C:/Users/Java/QA_Diplom/build/reports/tests/1656644286023.9.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*/text()[contains(normalize-space(translate(string(.), '",
+      "children" : [ {
+        "name" : "4. Номер карты начинается с 0",
+        "uid" : "74be4823be3e1e91",
+        "parentUid" : "8942d86db504b5b58402a39a40edcb73",
+        "status" : "failed",
+        "time" : {
+          "start" : 1656644281101,
+          "stop" : 1656644286328,
+          "duration" : 5227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8942d86db504b5b58402a39a40edcb73"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
