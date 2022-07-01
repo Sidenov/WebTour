@@ -15,7 +15,7 @@
 + Успешно пройденных тестов- 28 (73,68 %)
 + Не пройденных тестов - 10 (26,32 %)
 
-![](Allure.png)
+[Отчет Allure](https://sidenov.github.io/WebTour/AllureReport/)
 
 ## Общие рекомендации:
 + [Исправить найденные дефекты](https://github.com/Sidenov/WebTour/issues)
